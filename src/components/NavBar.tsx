@@ -6,11 +6,11 @@ const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="py-4 w-full fixed top-0 left-0 z-50">
+    <nav className="py-4 w-full sticky top-0 z-50 bg-black">
       <div className="flex justify-between items-center max-w-[1170px] px-4 mx-auto">
         <div>
           <Link to={"/"}>
-            <h1 className="text-4xl">RoyA</h1>
+            <h1 className="text-3xl dancing font-bold">Akash Roy</h1>
           </Link>
         </div>
         {/* desktop menu items */}
