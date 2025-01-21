@@ -4,7 +4,7 @@ import FooterMain from "../components/FooterMain";
 
 const MainLayout = () => {
   return (
-    <div className=" min-h-screen">
+    <div>
       <NavBar />
       <Outlet />
       <FooterMain />
