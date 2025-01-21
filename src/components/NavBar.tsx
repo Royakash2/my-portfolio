@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const NavBar = () => {
   // State to handle mobile menu visibility
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-  
     <nav className="py-4 w-full fixed top-0 left-0 z-50">
       <div className="flex justify-between items-center max-w-[1170px] px-4 mx-auto">
         <div>
@@ -16,15 +15,55 @@ const NavBar = () => {
         </div>
         {/* desktop menu items */}
         <div className="hidden lg:flex space-x-10 font-semibold">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/About"}>About</Link>
-          <Link to={"/Projects"}>Projects</Link>
-          <Link to={"/contact"}>Contact</Link>
+          <NavLink
+            to="/"
+            end
+            className={
+              ({ isActive }) =>
+                isActive
+                  ? "py-2 text-[#ffff] font-bold" // Active style
+                  : "py-2 text-[#484646] hover:text-[#ffff]" // Default style
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "py-2 text-[#ffff] font-bold"
+                : "py-2 text-[#484646] hover:text-[#ffff]"
+            }
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "py-2 text-[#ffff] font-bold"
+                : "py-2 text-[#484646] hover:text-[#ffff]"
+            }
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive
+                ? "py-2 text-[#ffff] font-bold"
+                : "py-2 text-[#484646] hover:text-[#ffff]"
+            }
+          >
+            Contact
+          </NavLink>
         </div>
-
         {/* mobile menu icons with open and close logic by use useState hook */}
         <div className="lg:hidden">
-          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="transition-transform duration-300 ease-in-out"
+          >
             {isMobileMenuOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +71,7 @@ const NavBar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-10"
+                className="size-10 transform transition-transform duration-[800ms] ease-in-out rotate-0"
               >
                 <path
                   strokeLinecap="round"
@@ -47,7 +86,7 @@ const NavBar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-10"
+                className="size-10 transform transition-transform duration-[800ms] ease-in-out rotate-180"
               >
                 <path
                   strokeLinecap="round"
@@ -60,15 +99,65 @@ const NavBar = () => {
         </div>
         {/* desktop lets talk nav bar button */}
         <div className="hidden lg:block">
-          <button className="btn w-32 bg-[#323232] text-white rounded-2xl">
+          <Link
+            to={"/"}
+            className="btn text-lg px-10 bg-[#323232] hover:bg-white hover:text-[#323232] text-white rounded-2xl"
+          >
             Let s talk
-          </button>
+          </Link>
         </div>
         {/* mobile menu items */}
-        <div className="lg:hidden">
-
+        {/* Mobile Menu (visible when state is true) */}
+      </div>
+      <div
+        className={`lg:hidden fixed top-0 left-0 h-full bg-[#0F0F0F] text-white w-64 z-50 transform transition-transform duration-500 ease-in-out ${
+          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col items-center justify-center py-10">
+          <NavLink
+            to="/"
+            end
+            className={
+              ({ isActive }) =>
+                isActive
+                  ? "py-2 text-[#ffff] font-bold" // Active style
+                  : "py-2 text-[#323232] hover:text-[#ffff]" // Default style
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "py-2 text-[#ffff] font-bold"
+                : "py-2 text-[#323232] hover:text-[#ffff]"
+            }
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "py-2 text-[#ffff] font-bold"
+                : "py-2 text-[#323232] hover:text-[#ffff]"
+            }
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive
+                ? "py-2 text-[#ffff] font-bold"
+                : "py-2 text-[#323232] hover:text-[#ffff]"
+            }
+          >
+            Contact
+          </NavLink>
         </div>
-
       </div>
     </nav>
   );
