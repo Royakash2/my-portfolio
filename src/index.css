@@ -9,6 +9,11 @@
 .textColor {
     color: #676767;
 }
-.dancing{
+
+.dancing {
     font-family: "Dancing Script";
+}
+
+.primary-gradient {
+    @apply bg-gradient-to-r from-[#202020] to-[#1D1D1D];
 }

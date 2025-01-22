@@ -100,8 +100,8 @@ const NavBar = () => {
         {/* desktop lets talk nav bar button */}
         <div className="hidden lg:block">
           <Link
-            to={"/"}
-            className="btn text-lg px-10 bg-[#323232] hover:bg-white hover:text-[#323232] text-white rounded-2xl"
+            to={"/about"}
+            className="btn btn-outline text-sm px-6  hover:bg-white hover:text-[#323232] text-white rounded-2xl"
           >
             Let s talk
           </Link>
@@ -114,7 +114,7 @@ const NavBar = () => {
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex flex-col items-center justify-center py-10">
+        <div className="flex flex-col items-center pt-11 text-2xl gap-5">
           <NavLink
             to="/"
             end
@@ -122,7 +122,7 @@ const NavBar = () => {
               ({ isActive }) =>
                 isActive
                   ? "py-2 text-[#ffff] font-bold" // Active style
-                  : "py-2 text-[#323232] hover:text-[#ffff]" // Default style
+                  : "py-2 text-[#646463] hover:text-[#ffff]" // Default style
             }
           >
             Home
@@ -132,7 +132,7 @@ const NavBar = () => {
             className={({ isActive }) =>
               isActive
                 ? "py-2 text-[#ffff] font-bold"
-                : "py-2 text-[#323232] hover:text-[#ffff]"
+                : "py-2 text-[#646463] hover:text-[#ffff]"
             }
           >
             About
@@ -142,7 +142,7 @@ const NavBar = () => {
             className={({ isActive }) =>
               isActive
                 ? "py-2 text-[#ffff] font-bold"
-                : "py-2 text-[#323232] hover:text-[#ffff]"
+                : "py-2 text-[#646463] hover:text-[#ffff]"
             }
           >
             Projects
@@ -152,7 +152,7 @@ const NavBar = () => {
             className={({ isActive }) =>
               isActive
                 ? "py-2 text-[#ffff] font-bold"
-                : "py-2 text-[#323232] hover:text-[#ffff]"
+                : "py-2 text-[#646463] hover:text-[#ffff]"
             }
           >
             Contact
