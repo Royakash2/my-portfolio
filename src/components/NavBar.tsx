@@ -71,7 +71,7 @@ const NavBar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-10 transform transition-transform duration-[800ms] ease-in-out rotate-0"
+                className="size-10 transform transition-transform duration-200 ease-in-out rotate-0"
               >
                 <path
                   strokeLinecap="round"
@@ -86,7 +86,7 @@ const NavBar = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="size-10 transform transition-transform duration-[800ms] ease-in-out rotate-180"
+                className="size-10 transform transition-transform duration-300 ease-in-out rotate-180"
               >
                 <path
                   strokeLinecap="round"
