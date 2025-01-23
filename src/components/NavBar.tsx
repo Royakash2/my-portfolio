@@ -101,7 +101,7 @@ const NavBar = () => {
         <div className="hidden lg:block">
           <Link
             to={"/about"}
-            className="btn btn-outline text-sm px-6  hover:bg-white hover:text-[#323232] text-white rounded-2xl"
+            className="btn btn-md btn-outline hover:bg-white hover:text-[#323232] text-white rounded-2xl"
           >
             Let s talk
           </Link>
