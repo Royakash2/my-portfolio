@@ -1,4 +1,4 @@
-import profile from "../assets/main-avtar.jpg";
+import profile from "../assets/akash.jpg";
 import ButtonArrow from "./ButtonArrow";
 
 const ProfileCard = () => {

@@ -9,7 +9,7 @@ const NavBar = () => {
     <nav className="py-4 w-full sticky top-0 z-50 bg-black">
       <div className="flex justify-between items-center max-w-[1170px] px-4 mx-auto">
         <div>
-          <Link to={"/"}>
+          <Link to="/">
             <h1 className="text-3xl dancing font-bold">Akash Roy</h1>
           </Link>
         </div>
@@ -38,7 +38,7 @@ const NavBar = () => {
             About
           </NavLink>
           <NavLink
-            to="/projects"
+            to="/portfolio"
             className={({ isActive }) =>
               isActive
                 ? "py-2 text-[#ffff] font-bold"
@@ -138,7 +138,7 @@ const NavBar = () => {
             About
           </NavLink>
           <NavLink
-            to="/projects"
+            to="/portfolio"
             className={({ isActive }) =>
               isActive
                 ? "py-2 text-[#ffff] font-bold"

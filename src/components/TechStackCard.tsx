@@ -11,7 +11,7 @@ const TechStackCard = () => {
       <h1 className="text-center text-2xl">Tech Stack</h1>
       <p className="divider w-[50%] mx-auto"></p>
       <Marquee gradient={false} speed={33}>
-        <div className="flex justify-center items-center gap-8">
+        <div className="flex justify-center items-center gap-8 p-5">
           <span className=" text-orange-400">
             Html <GrHtml5 className="size-9" />
           </span>
