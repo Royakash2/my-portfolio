@@ -17,7 +17,7 @@ const SocialCard = () => {
         <div className="card-actions flex items-center justify-between gap-5 w-full mt-6">
           <div>
             <p className="text-sm text-[#545454]">stay with me</p>
-            <p className="text-xl mt-2">Profiles</p>
+            <p className="text-xl mt-2 font-bold">Profiles</p>
           </div>
           <ButtonArrow></ButtonArrow>
         </div>

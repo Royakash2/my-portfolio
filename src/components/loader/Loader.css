@@ -9,26 +9,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1e1e1e; /* Dark background */
-    color: #fff; /* Text color */
-    z-index: 9999; /* Ensure it appears above all content */
-  }
-  
-  .spinner {
-    border: 5px solid rgba(255, 255, 255, 0.2);
+    background-color: #1e1e1e, transparent;
+    /* Dark background */
+    color: #fff;
+    /* Text color */
+    z-index: 9999;
+    /* Ensure it appears above all content */
+}
+
+.spinner {
+    border: 5px solid rgba(57, 245, 19, 0.2);
     border-top: 5px solid #fff;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
+}
+
+@keyframes spin {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
+}

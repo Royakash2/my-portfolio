@@ -8,7 +8,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 const TechStackCard = () => {
   return (
     <div className="bg-[#1A1A1A] rounded-xl p-3">
-      <h1 className="text-center text-2xl">Tech Stack</h1>
+      <h1 className="text-center text-2xl font-bold">Tech Stack</h1>
       <p className="divider w-[50%] mx-auto"></p>
       <Marquee gradient={false} speed={33}>
         <div className="flex justify-center items-center gap-8 p-5">

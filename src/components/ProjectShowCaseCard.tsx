@@ -15,7 +15,7 @@ const ProjectShowCaseCard = () => {
         <div className="card-actions flex items-center justify-between gap-5 w-full mt-6">
           <div>
             <p className="text-sm text-[#545454]">Showcase</p>
-            <p className="text-xl mt-2">Portfolio</p>
+            <p className="text-xl mt-2 font-bold">Portfolio</p>
           </div>
           <ButtonArrow></ButtonArrow>
         </div>
