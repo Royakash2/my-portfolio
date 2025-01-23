@@ -3,7 +3,7 @@ import "./Loader.css"; // Add custom loader styles
 
 const Loader: React.FC = () => {
   return (
-    <div className="loader-container">
+    <div className="loader-container" data-aos='fade-up'>
       <div className="flex w-[50%] h-[50%] flex-col gap-4">
         <div className="flex items-center gap-4">
           <div className="skeleton h-16 w-16 shrink-0 rounded-full"></div>

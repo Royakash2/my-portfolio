@@ -1,10 +1,11 @@
+
 import ButtonArrow from "./ButtonArrow";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 
-const SocialCard = () => {
+const AboutCard = () => {
   return (
-    <div className="bg-[#1A1A1A] h-auto py-7 rounded-xl shadow-lg flex justify-center items-center" data-aos="zoom-in">
+    <div className="bg-[#1A1A1A] h-auto py-7 rounded-xl shadow-lg flex justify-center items-center" data-aos="zoom-in-up">
       <div className="">
         <div className=" flex items-center p-6 gap-8">
           <a href="https://github.com/Royakash2">
@@ -26,4 +27,4 @@ const SocialCard = () => {
   );
 };
 
-export default SocialCard;
+export default AboutCard;

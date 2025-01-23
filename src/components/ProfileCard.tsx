@@ -1,13 +1,13 @@
-import profile from "../assets/akash.jpg";
+import profile from "../assets/main-avtar.jpg";
 import ButtonArrow from "./ButtonArrow";
 
 const ProfileCard = () => {
   return (
-    <div className=" primary-gradient card w-full max-w-sm md:max-w-lg lg:max-w-xl mx-auto bg-gray-800 p-6 rounded-xl">
+    <div className=" primary-gradient card w-full max-w-sm md:max-w-lg lg:max-w-xl mx-auto  p-6 rounded-xl">
       <div className="flex flex-col md:flex-row items-center">
         <div className="avatar mb-4 md:mb-0">
-          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-primary">
-            <img src={profile} alt="David Henderson" className="object-cover" />
+          <div className="w-44 md:w-full md:h-44 rounded-tl-3xl ">
+            <img src={profile} alt="akash" className="object-cover w-full" />
           </div>
         </div>
         <div className="text-center md:text-left md:ml-6">

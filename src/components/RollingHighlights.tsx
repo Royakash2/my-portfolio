@@ -1,41 +1,45 @@
 import Marquee from "react-fast-marquee";
-import { DiMongodb } from "react-icons/di";
-import { FaNodeJs, FaReact } from "react-icons/fa";
-import { SiExpress, SiTypescript } from "react-icons/si";
-
+import { DiCss3, DiHtml5 } from "react-icons/di";
+import { FaReact } from "react-icons/fa";
+import { SiDaisyui, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 const RollingHighlights = () => {
-    return (
-        <div className="primary-gradient md:col-span-2 p-5 rounded-xl shadow-2xl">
-        <Marquee gradient={false} speed={70}>
-          <span className="text-xl mx-4 text-slate-400">
-            !----Welcome to my Portfolio website 🙋‍♂️-----!
-          </span>
-          <div className="flex">
-            <span className="text-xl mx-4 text-green-500 flex items-center">
-              <DiMongodb />
-              <span>MongoDB</span>
-            </span>
-            <span className="text-xl mx-4 flex items-center">
-              <SiExpress />
-              <span>press</span>
-            </span>
-            <span className="text-xl mx-4 text-blue-400 flex items-center">
-              <FaReact />
-              <span>React</span>
-            </span>
-            <span className="text-xl mx-4 text-green-300 flex items-center">
-              <span>Node</span>
-              <FaNodeJs />
-            </span>
-            <span className="text-xl mx-4 text-blue-300 flex items-center gap-1">
-              <SiTypescript />
-              <span>TypeScript</span>
-            </span>
+  return (
+    <div className="primary-gradient md:col-span-2 p-5 rounded-xl shadow-2xl" data-aos="zoom-in-left">
+      <Marquee gradient={false} speed={70}>
+        <span className="text-xl mx-4 text-slate-400">
+          !----Welcome! Explore my journey as a developer 🙋‍♂️-----!
+        </span>
+        <div className="flex items-center text-slate-400 font-semibold gap-4">
+          <span className="text-xl">I created this website with these technologies:</span>
+          <div className="flex items-center gap-2 text-orange-500">
+            <DiHtml5 />
+            <span>HTML</span>
           </div>
-        </Marquee>
-      </div>
-    );
+          <div className="flex items-center gap-2 text-blue-500">
+            <DiCss3 />
+            <span>CSS</span>
+          </div>
+          <div className="flex items-center gap-2 text-blue-400">
+            <SiTypescript />
+            <span>TypeScript</span>
+          </div>
+          <div className="flex items-center gap-2 text-cyan-400">
+            <FaReact />
+            <span>React</span>
+          </div>
+          <div className="flex items-center gap-2 text-teal-500">
+            <SiTailwindcss />
+            <span>Tailwind</span>
+          </div>
+          <div className="flex items-center gap-2 text-purple-500">
+            <SiDaisyui />
+            <span>DaisyUI</span>
+          </div>
+        </div>
+      </Marquee>
+    </div>
+  );
 };
 
 export default RollingHighlights;

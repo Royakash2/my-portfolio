@@ -3,7 +3,7 @@ import projectBanner from "../assets/laptop.png";
 
 const ProjectShowCaseCard = () => {
   return (
-    <div className="bg-[#1A1A1A] h-auto rounded-xl shadow-lg flex justify-center items-center py-6">
+    <div className="bg-[#1A1A1A] h-auto rounded-xl shadow-lg flex justify-center items-center py-6" data-aos="zoom-in-up">
       <div>
         <div className="rounded-xl w-52">
           <img
