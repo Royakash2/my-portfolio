@@ -26,7 +26,7 @@ const ProfileCard = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center md:justify-end mt-10 gap-6">
+      <div className="flex justify-center md:justify-end mt-6 md:mt-0 gap-6">
         <button className="btn btn-md btn-outline bg-black hover:bg-white hover:text-[#323232] text-white rounded-2xl">
           download resume <MdOutlineFileDownload />
         </button>

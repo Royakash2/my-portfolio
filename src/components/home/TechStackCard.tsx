@@ -48,7 +48,7 @@ const TechStackCard: React.FC = () => {
           </div>
         </Marquee>
       </div>
-      <div className="grid grid-cols-3 lg:hidden p-6 gap-4">
+      <div className="grid grid-cols-3 items-center lg:hidden p-2 gap-4">
         {techStack.map((tech, index) => (
           <div
             key={index}
