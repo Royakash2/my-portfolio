@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import NavBar from "../components/NavBar";
-import FooterMain from "../components/FooterMain";
+import NavBar from "../components/shared/NavBar";
+import FooterMain from "../components/shared/FooterMain";
 import Loader from "../components/loader/Loader";
 import { useEffect, useState } from "react";
 import AOS from "aos";

@@ -1,5 +1,5 @@
-import ButtonArrow from "./ButtonArrow";
-import projectBanner from "../assets/laptop.png";
+import ButtonArrow from "../buttons/ButtonArrow";
+import projectBanner from "./../../assets/laptop.png";
 
 const ProjectShowCaseCard = () => {
   return (

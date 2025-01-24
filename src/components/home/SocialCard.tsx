@@ -1,4 +1,4 @@
-import ButtonArrow from "./ButtonArrow";
+import ButtonArrow from "../buttons/ButtonArrow";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 

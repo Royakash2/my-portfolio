@@ -1,9 +1,9 @@
-import profile from "../assets/main-avtar.jpg";
-import ButtonArrow from "./ButtonArrow";
+import { MdOutlineFileDownload } from "react-icons/md";
+import profile from "../../assets/main-avtar.jpg";
 
 const ProfileCard = () => {
   return (
-    <div className=" primary-gradient card w-full max-w-sm md:max-w-lg lg:max-w-xl mx-auto  p-6 rounded-xl">
+    <div className="primary-gradient card w-full max-w-sm md:max-w-lg lg:max-w-xl mx-auto  p-6 rounded-xl">
       <div className="flex flex-col md:flex-row items-center">
         <div className="avatar mb-4 md:mb-0">
           <div className="w-44 md:w-full md:h-44 rounded-tl-3xl ">
@@ -26,12 +26,10 @@ const ProfileCard = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-center md:justify-between mt-10 gap-6">
+      <div className="flex justify-center md:justify-end mt-10 gap-6">
         <button className="btn btn-md btn-outline bg-black hover:bg-white hover:text-[#323232] text-white rounded-2xl">
-          download resume
+          download resume <MdOutlineFileDownload />
         </button>
-
-        <ButtonArrow />
       </div>
     </div>
   );

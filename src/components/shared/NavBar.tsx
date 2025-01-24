@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router";
-import DesktopMenu from "./Nav-menus/DesktopMenu";
-import MobileMenus from "./Nav-menus/MobileMenus";
-import MobileMenuIcons from "./Nav-menus/MobileMenuIcons";
+import DesktopMenu from "../Nav-menus/DesktopMenu";
+import MobileMenus from "../Nav-menus/MobileMenus";
+import MobileMenuIcons from "../Nav-menus/MobileMenuIcons";
 
 const NavBar = () => {
   // State to handle mobile menu visibility
