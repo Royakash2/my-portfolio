@@ -8,7 +8,7 @@ const AboutCard = () => {
         <div className="flex justify-center items-center gap-8">
         <AiFillSignature className="size-14"/>
         </div>
-        <div className="card-actions flex items-center justify-around gap-5 w-full mt-6">
+        <div className="flex items-center justify-around gap-5 w-full mt-6">
           <div>
             <p className="text-sm text-[#545454]">Details About Me</p>
             <p className="text-xl mt-2 font-bold">Discover</p>

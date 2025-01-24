@@ -32,7 +32,7 @@ const TechStackCard: React.FC = () => {
         Tech Stack
       </h1>
       <p className="text-center text-lg">Skills</p>
-      <div className="divider w-[70%] mx-auto"></div>
+      <div className="divider my-0 w-[70%] mx-auto"></div>
       <div className="hidden lg:block">
         <Marquee gradient={false} speed={40} className="mt-5">
           <div className="flex justify-center items-center gap-10 p-5">
