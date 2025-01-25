@@ -10,7 +10,7 @@ const DesktopMenu = () => {
           ({ isActive }) =>
             isActive
               ? "py-2 text-[#ffff] font-bold" // Active style
-              : "py-2 text-[#484646] hover:text-[#ffff]" // Default style
+              : "py-2 text-[#61DBFB] hover:text-[#00D1A0] hover:underline hover:decoration-2 hover:underline-offset-4" // Default style
         }
       >
         Home
@@ -20,7 +20,7 @@ const DesktopMenu = () => {
         className={({ isActive }) =>
           isActive
             ? "py-2 text-[#ffff] font-bold"
-            : "py-2 text-[#484646] hover:text-[#ffff]"
+            : "py-2 text-[#61DBFB] hover:text-[#00D1A0] hover:underline hover:decoration-2 hover:underline-offset-4"
         }
       >
         About
@@ -30,7 +30,7 @@ const DesktopMenu = () => {
         className={({ isActive }) =>
           isActive
             ? "py-2 text-[#ffff] font-bold"
-            : "py-2 text-[#484646] hover:text-[#ffff]"
+            : "py-2 text-[#61DBFB] hover:text-[#00D1A0] hover:underline hover:decoration-2 hover:underline-offset-4"
         }
       >
         Projects
@@ -40,7 +40,7 @@ const DesktopMenu = () => {
         className={({ isActive }) =>
           isActive
             ? "py-2 text-[#ffff] font-bold"
-            : "py-2 text-[#484646] hover:text-[#ffff]"
+            : "py-2 text-[#61DBFB] hover:text-[#00D1A0] hover:underline hover:decoration-2 hover:underline-offset-4"
         }
       >
         Contact

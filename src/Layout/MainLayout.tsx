@@ -10,7 +10,7 @@ const MainLayout = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
+      duration: 900, 
       once: true
     });
   }, []);
@@ -24,7 +24,7 @@ const MainLayout = () => {
     return <Loader />;
   }
   return (
-    <div className="max-w-screen-xl mx-auto px-4">
+    <div className="max-w-screen-2xl mx-auto px-4">
       <NavBar />
       <Outlet />
       <FooterMain />

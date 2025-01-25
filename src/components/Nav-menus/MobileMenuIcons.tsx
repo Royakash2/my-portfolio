@@ -20,7 +20,7 @@ const MobileMenuIcons: React.FC<MobileMenuIconsProps> = ({ setIsMobileMenuOpen, 
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-10 transform transition-transform duration-200 ease-in-out rotate-0"
+            className="size-14 transform transition-transform duration-200 ease-in-out rotate-0 text-[#fb617b]"
           >
             <path
               strokeLinecap="round"
@@ -35,7 +35,7 @@ const MobileMenuIcons: React.FC<MobileMenuIconsProps> = ({ setIsMobileMenuOpen, 
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-10 transform transition-transform duration-300 ease-in-out rotate-180"
+            className="size-14 transform transition-transform duration-300 ease-in-out rotate-180 shadow shadow-slate-600"
           >
             <path
               strokeLinecap="round"

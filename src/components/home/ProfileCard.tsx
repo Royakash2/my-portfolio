@@ -15,10 +15,10 @@ const ProfileCard = () => {
             Hi, I am Akash
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-white">
-            A <span className="text-green-400">M</span>
-            <span className="text-slate-400">E</span>
-            <span className="text-blue-500">R</span>
-            <span className="text-green-500">N</span> Stack Developer
+            A <span className="text-[#00FFFF]">M</span>
+            <span className="text-[#00FFFF]">E</span>
+            <span className="text-[#00FFFF]">R</span>
+            <span className="text-[#00FFFF]">N</span> Stack Developer
           </h2>
           <p className="text-sm md:text-base text-gray-300 mt-2">
             with a passion for building dynamic and user-friendly web

@@ -13,7 +13,7 @@ const NavBar = () => {
       <div className="flex justify-between items-center max-w-[1170px] px-4 mx-auto">
         <div>
           <Link to="/">
-            <h1 className="text-3xl dancing font-bold">Akash Roy</h1>
+            <h1 className="text-3xl dancing font-bold text-[#FFC107]">Akash Roy</h1>
           </Link>
         </div>
         <DesktopMenu /> {/* desktop menu items */}
@@ -35,7 +35,7 @@ const NavBar = () => {
 
       {/* Mobile Menu (visible when state is true) */}
       <div
-        className={`lg:hidden fixed top-0 left-0 h-full bg-[#0F0F0F] text-white w-64 z-50 transform transition-transform duration-500 ease-in-out ${
+        className={`lg:hidden fixed top-0 left-0 h-full bg-[#0F0F0F] text-white w-64 md:w-[500px] z-50 transform transition-transform duration-500 ease-in-out ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >

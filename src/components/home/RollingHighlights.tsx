@@ -8,7 +8,7 @@ const RollingHighlights = () => {
     <div className="primary-gradient md:col-span-2 p-5 rounded-xl shadow-2xl" data-aos="zoom-in-left">
       <Marquee gradient={false} speed={70}>
         <span className="text-xl mx-4 text-slate-400">
-          !----Welcome! Explore my journey as a developer 🙋‍♂️-----!
+          Welcome! Explore my journey as a developer 🙋‍♂️!
         </span>
         <div className="flex items-center text-slate-400 font-semibold gap-4">
           <span className="text-xl">I created this website with these technologies:</span>
