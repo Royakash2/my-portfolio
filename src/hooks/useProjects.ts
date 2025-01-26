@@ -9,7 +9,7 @@ export const useProjects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await fetch("/public/projects.json");
+        const response = await fetch("/projects.json");
         if (!response.ok) {
           throw new Error("Failed to fetch projects data");
         }

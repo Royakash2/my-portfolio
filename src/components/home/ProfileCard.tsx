@@ -3,10 +3,10 @@ import profile from "../../assets/profile.png";
 
 const ProfileCard = () => {
   return (
-    <div className="card w-full max-w-sm md:max-w-lg lg:max-w-xl mx-auto p-6">
+    <div className="card w-full max-w-sm md:max-w-lg lg:max-w-xl mx-auto px-6 py-4">
       <div className="flex flex-col md:flex-row items-center">
         <div className="avatar mb-4 md:mb-0">
-          <div className="w-44 h-44 md:w-full md:h-48 rounded-tl-3xl">
+          <div className="w-44 h-44 md:w-full md:h-52 rounded-tl-3xl">
             <img src={profile} alt="akash" className="object-cover w-full filter " />
           </div>
         </div>

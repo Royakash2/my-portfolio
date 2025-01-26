@@ -38,7 +38,7 @@ const Home = () => {
       </div>
       
       {/* next up coming section */}
-      <div className="lg:col-span-2 primary-gradient">
+      <div className="lg:col-span-2 primary-gradient rounded-[50px]">       
         <ProjectShowCaseCard/>
       </div>
     </div>
