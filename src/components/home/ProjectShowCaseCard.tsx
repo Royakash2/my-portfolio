@@ -1,27 +1,28 @@
-import ButtonArrow from "../buttons/ButtonArrow";
-import projectBanner from "./../../assets/laptop.png";
+import { useProjects } from "../../hooks/useProjects";
+import ProjectCard from "./ProjectCard";
 
-const ProjectShowCaseCard = () => {
+const ProjectShowcase = () => {
+  const { projects, loading, error } = useProjects();
+
+  if (loading) {
+    return <div className="text-white">Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-red-500">Error: {error}</div>;
+  }
+
   return (
-    <div className="bg-[#1A1A1A] h-auto rounded-xl shadow-lg flex justify-center items-center py-6" data-aos="zoom-in-up">
-      <div>
-        <div className="rounded-xl w-52">
-          <img
-            className="w-48  transition-all ease-in-out duration-300"
-            src={projectBanner}
-            alt=""
-          />
-        </div>
-        <div className="card-actions flex items-center justify-between gap-5 w-full mt-6">
-          <div>
-            <p className="text-sm text-[#545454]">Showcase</p>
-            <p className="text-xl mt-2 font-bold">Portfolio</p>
-          </div>
-          <ButtonArrow></ButtonArrow>
-        </div>
+    <div>
+      <h1 className="text-center text-xl mt-3">Projects</h1>
+      <div className="divider w-[70%] mx-auto"></div>
+      <div className="primary-gradient h-full w-full flex flex-wrap justify-center items-center space-y-4 md:space-x-5 p-8 rounded-3xl">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
     </div>
   );
 };
 
-export default ProjectShowCaseCard;
+export default ProjectShowcase;

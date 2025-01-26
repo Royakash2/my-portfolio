@@ -9,7 +9,7 @@ const DesktopMenu = () => {
         className={
           ({ isActive }) =>
             isActive
-              ? "py-2 text-[#ffff] font-bold" // Active style
+              ? "py-2 text-[#ffff] font-bold underline decoration-2 underline-offset-4" // Active style
               : "py-2 text-[#61DBFB] hover:text-[#00D1A0] hover:underline hover:decoration-2 hover:underline-offset-4" // Default style
         }
       >
@@ -19,7 +19,7 @@ const DesktopMenu = () => {
         to="/about"
         className={({ isActive }) =>
           isActive
-            ? "py-2 text-[#ffff] font-bold"
+            ? "py-2 text-[#ffff] font-bold underline decoration-2 underline-offset-4"
             : "py-2 text-[#61DBFB] hover:text-[#00D1A0] hover:underline hover:decoration-2 hover:underline-offset-4"
         }
       >

@@ -1,6 +1,8 @@
+import { NavLink } from "react-router";
+
 const FooterMain = () => {
     return (
-      <footer className="bg-black text-white py-6">
+      <footer className="bg-black text-white py-6 my-14">
         <p className="divider"></p>
         <div className="text-center">
           {/* Logo */}
@@ -9,24 +11,24 @@ const FooterMain = () => {
           {/* Navigation Links */}
           <ul className="flex justify-center space-x-8 text-gray-400 text-sm mb-4">
             <li>
-              <a href="#" className="hover:text-white transition">
-                HOME
-              </a>
+              <NavLink to="/" className="hover:text-white transition">
+                Home
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
-                ABOUT
-              </a>
+            <NavLink to="/about" className="hover:text-white transition">
+                About
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
-                WORKS
-              </a>
+            <NavLink to="/portfolio" className="hover:text-white transition">
+                Works
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition">
-                CONTACT
-              </a>
+            <NavLink to="/contact" className="hover:text-white transition">
+                Contact
+              </NavLink>
             </li>
           </ul>
   

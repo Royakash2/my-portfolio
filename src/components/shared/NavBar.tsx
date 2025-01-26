@@ -10,10 +10,10 @@ const NavBar = () => {
 
   return (
     <nav className="py-4 w-full sticky top-0 z-50 bg-black">
-      <div className="flex justify-between items-center max-w-[1170px] px-4 mx-auto">
+      <div className="flex justify-between items-center max-w-[1170px] px-6 mx-auto">
         <div>
           <Link to="/">
-            <h1 className="text-3xl dancing font-bold text-[#FFC107]">Akash Roy</h1>
+            <h1 className="text-3xl dancing font-bold">Akash Roy</h1>
           </Link>
         </div>
         <DesktopMenu /> {/* desktop menu items */}

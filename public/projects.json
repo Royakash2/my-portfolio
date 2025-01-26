@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "title": "Personal Portfolio",
+      "description": "A modern portfolio website showcasing my skills, projects, and contact information. Built with React and Tailwind CSS.",
+      "image": "https://images.unsplash.com/photo-1737048850806-5cd8bc9fadda?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "technologies": ["React", "Tailwind CSS", "JavaScript"],
+      "liveLink": "https://royakash.netlify.app/",
+      "githubLink": "https://github.com/yourusername/portfolio-project",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "E-Commerce Website",
+      "description": "A full-stack e-commerce platform with product listings, shopping cart, and payment integration.",
+      "image": "https://via.placeholder.com/300x200.png?text=E-Commerce+Project",
+      "technologies": ["MERN Stack", "Stripe API", "Redux"],
+      "liveLink": "https://ecommerce-site.example.com",
+      "githubLink": "https://github.com/yourusername/ecommerce-website",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Blog Website",
+      "description": "A content-focused blog site with a modern design, comment system, and markdown support.",
+      "image": "https://via.placeholder.com/300x200.png?text=Blog+Project",
+      "technologies": ["Next.js", "Node.js", "MongoDB"],
+      "liveLink": "https://blogsite.example.com",
+      "githubLink": "https://github.com/yourusername/blog-website",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "title": "To-Do Application",
+      "description": "A simple to-do app to manage tasks efficiently, featuring state management with Redux.",
+      "image": "https://via.placeholder.com/300x200.png?text=To-Do+App",
+      "technologies": ["React", "Redux", "Tailwind CSS"],
+      "liveLink": "https://todo-app.example.com",
+      "githubLink": "https://github.com/yourusername/todo-app",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Weather App",
+      "description": "A weather forecast app that provides real-time weather data using OpenWeather API.",
+      "image": "https://via.placeholder.com/300x200.png?text=Weather+App",
+      "technologies": ["JavaScript", "HTML", "CSS"],
+      "liveLink": "https://weather-app.example.com",
+      "githubLink": "https://github.com/yourusername/weather-app",
+      "featured": false
+    }
+  ]
+  
