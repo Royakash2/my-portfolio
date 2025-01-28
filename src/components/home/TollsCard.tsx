@@ -5,7 +5,7 @@ const ToolsCard = () => {
   return (
     <div className="primary-gradient p-6 rounded-lg shadow-lg"  data-aos="zoom-in">
       <h1 className="text-center text-2xl font-bold text-white mb-4">Tools I Use</h1>
-      <div className="divider w-[70%] mx-auto bg-white h-[2px] mb-6"></div>
+      <div className="divider w-[70%] mx-auto mb-6"></div>
       <div className="grid grid-cols-2 sm:grid-cols-4 justify-items-center items-center gap-y-6">
         {/* VS Code */}
         <span className="flex flex-col justify-center items-center text-white">
