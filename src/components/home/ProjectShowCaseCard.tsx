@@ -17,7 +17,7 @@ const ProjectShowcase = () => {
     <div className="p-8 text-center">
       <h1 className="text-center text-2xl mt-3 font-bold">Projects</h1>
       <div className="divider w-[70%] mx-auto"></div>
-      <div className="primary-gradient h-full w-full flex flex-wrap justify-center items-center space-y-4 md:space-x-5 p-8 rounded-3xl">
+      <div className="primary-gradient h-full w-full flex flex-col md:flex-row justify-center items-center space-y-4 md:space-x-5 p-8 rounded-3xl">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

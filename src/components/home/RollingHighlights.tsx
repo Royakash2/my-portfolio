@@ -6,7 +6,7 @@ import { SiDaisyui, SiTailwindcss, SiTypescript } from "react-icons/si";
 const RollingHighlights = () => {
   return (
     <div className="primary-gradient md:col-span-2 p-5 rounded-xl shadow-2xl" data-aos="zoom-in-left">
-      <Marquee gradient={false} speed={70}>
+      <Marquee gradient={false} speed={50}>
         <span className="text-xl mx-4 text-slate-400">
           Welcome! Explore my journey as a developer 🙋‍♂️!
         </span>

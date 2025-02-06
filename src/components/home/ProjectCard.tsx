@@ -9,7 +9,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div
-    className="relative group w-80 h-96 overflow-hidden rounded-2xl shadow-lg bg-gray-800"
+    className="relative group w-[100%] h-96 overflow-hidden rounded-2xl shadow-lg bg-gray-800"
     data-aos="zoom-out"
   >
     {/* Background Image */}
