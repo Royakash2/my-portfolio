@@ -3,6 +3,8 @@ import { Link } from "react-router";
 import DesktopMenu from "../Nav-menus/DesktopMenu";
 import MobileMenus from "../Nav-menus/MobileMenus";
 import MobileMenuIcons from "../Nav-menus/MobileMenuIcons";
+import MobileAvatar from "../Nav-menus/MobileAvatar";
+
 
 const NavBar = () => {
   // State to handle mobile menu visibility
@@ -25,7 +27,7 @@ const NavBar = () => {
         {/* desktop lets talk nav bar button */}
         <div className="hidden lg:block">
           <Link
-            to={"/about"}
+            to={"/contact"}
             className="btn btn-md btn-outline hover:bg-white hover:text-[#323232] text-white rounded-2xl"
           >
             Let s talk
@@ -39,6 +41,7 @@ const NavBar = () => {
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
+        <MobileAvatar/>
         <MobileMenus /> {/* mobile menu items */}
       </div>
     </nav>

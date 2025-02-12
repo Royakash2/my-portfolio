@@ -3,7 +3,7 @@ import { NavLink } from 'react-router';
 
 const MobileMenus = () => {
     return (
-        <div className="flex flex-col items-center pt-11 text-2xl gap-5">
+        <div className="flex flex-col items-center text-2xl gap-5">
         <NavLink
           to="/"
           end
