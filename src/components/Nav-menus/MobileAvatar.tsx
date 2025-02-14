@@ -13,7 +13,6 @@ const MobileAvatar = () => {
         />
       </div>
       <h1 className="text-3xl dancing font-bold mb-6">Akash Roy</h1>
-
       {/* Social Media Icons */}
       <div className="flex space-x-4 mb-8">
         <a href="#" className="text-gray-600 hover:text-blue-600">
