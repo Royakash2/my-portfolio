@@ -1,12 +1,13 @@
 import AboutMeCard from "../components/About/AboutMeCard";
 import AboutMeDescription from "../components/About/AboutMeDescription";
 import Education from "../components/About/Education";
+import Service from "../components/About/Service";
 
 const About = () => {
   return (
     <div className="flex flex-col md:flex-row items-start gap-8 p-6 max-w-5xl mx-auto">
       {/* Left Side: Sticky Profile Card */}
-      <div className="w-full md:w-1/3 md:sticky top-24">
+      <div className="w-full md:w-1/3 md:sticky top-20">
         <AboutMeCard />
       </div>
       {/* Right Side: Content Area */}
@@ -14,10 +15,8 @@ const About = () => {
         {/* about me */}
         <AboutMeDescription />
         <Education/>
-        <AboutMeDescription />
-        <AboutMeDescription />
-        <AboutMeDescription />
-        <AboutMeDescription />
+        <Service/>
+        
       </div>
     </div>
   );

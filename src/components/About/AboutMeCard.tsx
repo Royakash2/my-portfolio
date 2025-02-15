@@ -4,9 +4,9 @@ import { NavLink } from "react-router";
 import profile from "../../assets/main-avtar.jpg";
 const AboutMeCard = () => {
   return (
-    <div className="">
+    
       <div
-        className="card bg-base-200 shadow-xl p-6 text-center gap-2 rounded-lg"
+        className="card bg-base-200 shadow-xl py-6 text-center gap-2 rounded-lg w-full"
         data-aos="zoom-in-right"
       >
         <img
@@ -56,12 +56,12 @@ const AboutMeCard = () => {
         </div>
         <NavLink to="/contact">
           {" "}
-          <button className=" mt-5 btn btn-outline btn-wide bg-black hover:bg-white hover:text-[#323232] text-white rounded-2xl">
+          <button className="mt-6 btn btn-outline btn-wide md:w-52 bg-black hover:bg-white hover:text-[#323232] text-white rounded-2xl">
             contact me
           </button>
         </NavLink>
       </div>
-    </div>
+  
   );
 };
 
