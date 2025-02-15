@@ -2,6 +2,7 @@ import AboutMeCard from "../components/About/AboutMeCard";
 import AboutMeDescription from "../components/About/AboutMeDescription";
 import Education from "../components/About/Education";
 import Service from "../components/About/Service";
+import Skills from "../components/About/Skills";
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
         <AboutMeDescription />
         <Education/>
         <Service/>
-        
+        <Skills/>
       </div>
     </div>
   );
