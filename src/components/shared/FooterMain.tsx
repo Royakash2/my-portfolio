@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 const FooterMain = () => {
     return (
-      <footer className="bg-black text-white py-6 my-14">
+      <footer className="bg-black text-white py-6">
         <p className="divider"></p>
         <div className="text-center">
           {/* Logo */}

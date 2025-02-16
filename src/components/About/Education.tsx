@@ -1,7 +1,7 @@
 const Education = () => {
     return (
         <div className="p-6 bg-gray-900 text-white rounded-lg shadow-lg">
-            <h1 className="text-4xl font-bold mb-6">Education</h1>
+            <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Education</h1>
             <div className="space-y-6">
                 <div className="border-l-4 border-blue-500 pl-4">
                     <h2 className="text-xl font-semibold">Bachelor of Business Studies (BBS)</h2>

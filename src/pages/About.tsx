@@ -6,9 +6,9 @@ import Skills from "../components/About/Skills";
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start gap-8 p-6 max-w-5xl mx-auto">
+    <div className="flex flex-col md:flex-row items-start gap-4 p-4 md:mx-8">
       {/* Left Side: Sticky Profile Card */}
-      <div className="w-full md:w-1/3 md:sticky top-20">
+      <div className="w-full md:w-1/3 md:sticky top-24">
         <AboutMeCard />
       </div>
       {/* Right Side: Content Area */}

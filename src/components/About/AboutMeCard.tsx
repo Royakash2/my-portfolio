@@ -12,11 +12,11 @@ const AboutMeCard = () => {
         <img
           src={profile}
           alt="akash roy"
-          className="w-52 h-52 mx-auto rounded-full border-4 border-primary object-cover"
+          className="w-40 h-40 lg:h-52 lg:w-52 mx-auto rounded-xl border-4 border-green-400 object-cover"
         />
         <h1 className="text-3xl dancing font-bold mt-4">Akash Roy</h1>
         <p className="text-sm text-gray-500 font-bold">MERN Stack Developer</p>
-        <div className="flex justify-center gap-4 mt-4">
+        <div className="flex justify-center items-center gap-4 px-4">
           {/* GitHub */}
           <a
             href="https://github.com/yourprofile"
@@ -24,7 +24,7 @@ const AboutMeCard = () => {
             rel="noopener noreferrer"
             className="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition"
           >
-            <FaGithub className="text-xl" />
+            <FaGithub className="text-lg" />
           </a>
           {/* LinkedIn */}
           <a
@@ -33,7 +33,7 @@ const AboutMeCard = () => {
             rel="noopener noreferrer"
             className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-500 transition"
           >
-            <FaLinkedin className="text-xl" />
+            <FaLinkedin className="text-lg" />
           </a>
           {/* Twitter */}
           <a
@@ -42,7 +42,7 @@ const AboutMeCard = () => {
             rel="noopener noreferrer"
             className="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-300 transition"
           >
-            <FaTwitter className="text-xl" />
+            <FaTwitter className="text-lg" />
           </a>
           {/* Facebook */}
           <a
@@ -51,7 +51,7 @@ const AboutMeCard = () => {
             rel="noopener noreferrer"
             className="bg-blue-700 text-white p-3 rounded-full hover:bg-blue-600 transition"
           >
-            <FaFacebook className="text-xl" />
+            <FaFacebook className="text-lg" />
           </a>
         </div>
         <NavLink to="/contact">
