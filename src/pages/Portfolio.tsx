@@ -1,8 +1,11 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+
+import "aos/dist/aos.css";
 import { useProjects } from "../hooks/useProjects";
 
 const Portfolio = () => {
+  
+
   const { projects } = useProjects();
   const categories = ["All", "React", "WordPress", "Full Stack"];
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -34,17 +37,11 @@ const Portfolio = () => {
         ))}
       </div>
 
-      <motion.div
-        layout
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-      >
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {filteredProjects.map((project) => (
-          <motion.div
+          <div
             key={project.id}
-            layout
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
+            data-aos="fade-up"
             className="bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-xl transition-all"
           >
             <img
@@ -70,9 +67,9 @@ const Portfolio = () => {
                 GitHub
               </a>
             </div>
-          </motion.div>
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };
