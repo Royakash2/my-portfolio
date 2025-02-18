@@ -7,6 +7,7 @@
       "technologies": ["React", "Tailwind CSS", "JavaScript"],
       "liveLink": "https://royakash.netlify.app/",
       "githubLink": "https://github.com/yourusername/portfolio-project",
+      "category": "WordPress",
       "featured": true
     },
     {
@@ -17,6 +18,7 @@
       "technologies": ["MERN Stack", "Stripe API", "Redux"],
       "liveLink": "https://ecommerce-site.example.com",
       "githubLink": "https://github.com/yourusername/ecommerce-website",
+      "category": "Full Stack",
       "featured": true
     },
     {
@@ -27,6 +29,7 @@
       "technologies": ["Next.js", "Node.js", "MongoDB"],
       "liveLink": "https://blogsite.example.com",
       "githubLink": "https://github.com/yourusername/blog-website",
+      "category": "React",
       "featured": true
     },
     {
@@ -37,6 +40,7 @@
       "technologies": ["React", "Redux", "Tailwind CSS"],
       "liveLink": "https://todo-app.example.com",
       "githubLink": "https://github.com/yourusername/todo-app",
+      "category": "WordPress",
       "featured": false
     },
     {
@@ -47,6 +51,7 @@
       "technologies": ["JavaScript", "HTML", "CSS"],
       "liveLink": "https://weather-app.example.com",
       "githubLink": "https://github.com/yourusername/weather-app",
+      "category": "React",
       "featured": false
     }
   ]

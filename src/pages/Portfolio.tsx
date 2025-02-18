@@ -1,32 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-
-const projects = [
-  {
-    id: 1,
-    title: "React Task Manager",
-    description: "A task management app built with React and Redux.",
-    image: "https://images.unsplash.com/photo-1739359652565-c48db69f62f3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Replace with real image
-    category: "React",
-    live: "#",
-    github: "#",
-  },
-  {
-    id: 2,
-    title: "WordPress Portfolio Site",
-    description: "A custom WordPress portfolio theme.",
-    image:
-      "https://images.unsplash.com/photo-1739359652565-c48db69f62f3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "WordPress",
-    live: "#",
-    github: "#",
-  },
-  // Add more projects here
-];
-
-const categories = ["All", "React", "WordPress", "Full Stack"];
+import { useProjects } from "../hooks/useProjects";
 
 const Portfolio = () => {
+  const { projects } = useProjects();
+  const categories = ["All", "React", "WordPress", "Full Stack"];
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects =
@@ -78,14 +56,14 @@ const Portfolio = () => {
             <p className="text-gray-400 text-sm mb-4">{project.description}</p>
             <div className="flex justify-between">
               <a
-                href={project.live}
+                href={project.liveLink}
                 target="_blank"
                 className="text-blue-500 hover:underline"
               >
                 Live Demo
               </a>
               <a
-                href={project.github}
+                href={project.githubLink}
                 target="_blank"
                 className="text-gray-400 hover:text-white"
               >

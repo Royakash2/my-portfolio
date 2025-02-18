@@ -4,14 +4,16 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
+
 * {
     font-family: "Inter", serif;
 }
+
 html {
     scroll-behavior: smooth;
-  }
-  
+}
+
 
 .textColor {
     color: #676767;

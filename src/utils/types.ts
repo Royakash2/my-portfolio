@@ -6,5 +6,6 @@ export interface Project {
   technologies: string[];
   liveLink: string;
   githubLink: string;
+  category:string;
   featured: boolean;
 }

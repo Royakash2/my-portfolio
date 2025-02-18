@@ -3,7 +3,7 @@ import { useProjects } from "../../hooks/useProjects";
 import ProjectCard from "./ProjectCard";
 
 const ProjectShowcase = () => {
-  const { projects, loading, error } = useProjects();
+  const { projects, loading, error } = useProjects(true); // Show only featured projects
 
   if (loading) {
     return <div className="text-white">Loading...</div>;
@@ -22,7 +22,9 @@ const ProjectShowcase = () => {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-      <button className="btn btn-outline btn-wide">See all projects <FaArrowAltCircleDown/></button>
+      <button className="btn btn-outline btn-wide">
+        See all projects <FaArrowAltCircleDown />
+      </button>
     </div>
   );
 };

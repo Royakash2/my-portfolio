@@ -1,5 +1,6 @@
 import { VscVscode } from "react-icons/vsc"; // VS Code Icon
-import { SiFigma, SiPostman, SiMongodb } from "react-icons/si"; // Figma, Postman, and MongoDB Compass Icons
+import { SiFigma, SiPostman, SiMongodb, SiOpenai } from "react-icons/si"; // Figma, Postman, and MongoDB Compass Icons
+import { GiSpermWhale } from "react-icons/gi";
 
 const ToolsCard = () => {
   return (
@@ -26,6 +27,16 @@ const ToolsCard = () => {
         <span className="flex flex-col justify-center items-center text-white">
           <SiMongodb className="text-5xl text-[#47A248]" />
           <p className="mt-2 text-sm font-semibold">MongoDB Compass</p>
+        </span>
+        {/* MongoDB Compass */}
+        <span className="flex flex-col justify-center items-center text-white">
+          <GiSpermWhale  className="text-5xl text-[#2a48ac]" />
+          <p className="mt-2 text-sm font-semibold">DeepSeek</p>
+        </span>
+        {/* MongoDB Compass */}
+        <span className="flex flex-col justify-center items-center text-white">
+          <SiOpenai className="text-5xl" />
+          <p className="mt-2 text-sm font-semibold">chat Gpt</p>
         </span>
       </div>
     </div>

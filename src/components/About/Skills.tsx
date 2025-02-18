@@ -6,20 +6,21 @@ import {
   SiExpress,
   SiMongodb,
   SiMongoose,
+  SiBootstrap,
+  SiRedux,
 } from "react-icons/si";
 
 const Skills = () => {
   const frontendSkills = [
-    { name: "React.js", icon: <FaReact className="text-blue-400" /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-gray-400" /> },
+    { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+    { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
     { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
     { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
-    {
-      name: "HTML & CSS",
-      icon: <FaHtml5 className="text-orange-500" />,
-      cssIcon: <FaCss3Alt className="text-blue-500" />,
-    },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400" /> },
+    { name: "BootStrap", icon: <SiBootstrap className="text-[#7509F6]" /> },
+    { name: "React.js", icon: <FaReact className="text-blue-400" /> },
+    { name: "Next.js", icon: <SiNextdotjs className="text-gray-400" /> },
+    { name: "Redux", icon: <SiRedux className="text-[#593D88]" /> },
   ];
 
   const backendSkills = [
