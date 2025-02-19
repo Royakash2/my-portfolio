@@ -30,9 +30,6 @@ const MobileMenuIcons: React.FC<MobileMenuIconsProps> = ({
           //  Cross Icon (Close menu)
           <FaTimes
             className="text-5xl transform transition-transform duration-1000 ease-in-out"
-            style={{
-              transform: isMobileMenuOpen ? "rotate(40deg)" : "rotate(0deg)",
-            }}
           />
         )}
       </button>
