@@ -22,7 +22,7 @@ const AboutMeCard = () => {
             href="https://github.com/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition"
+            className="bg-black text-white p-3 border border-white rounded-full hover:bg-gray-400 transition"
           >
             <FaGithub className="text-lg" />
           </a>
@@ -31,7 +31,7 @@ const AboutMeCard = () => {
             href="https://linkedin.com/in/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 text-white p-3 rounded-full hover:bg-blue-500 transition"
+            className="bg-black text-white p-3 border border-white rounded-full hover:bg-blue-500 transition"
           >
             <FaLinkedin className="text-lg" />
           </a>
@@ -40,7 +40,7 @@ const AboutMeCard = () => {
             href="https://twitter.com/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 text-white p-3 rounded-full hover:bg-slate-500 transition"
+            className="bg-black text-white p-3 border border-white rounded-full hover:bg-blue-500 transition"
           >
             <SiX className="text-lg" />
           </a>
@@ -49,7 +49,7 @@ const AboutMeCard = () => {
             href="https://facebook.com/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 text-white p-3 rounded-full hover:bg-blue-600 transition"
+            className="bg-black text-white p-3 border border-white rounded-full hover:bg-blue-500 transition"
           >
             <FaFacebook className="text-lg" />
           </a>

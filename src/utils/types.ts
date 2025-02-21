@@ -7,5 +7,6 @@ export interface Project {
   liveLink: string;
   githubLink: string;
   category:string;
+  techStack:string[]
   featured: boolean;
 }
