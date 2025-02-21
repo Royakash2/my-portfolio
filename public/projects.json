@@ -2,12 +2,13 @@
     {
       "id": 1,
       "title": "Personal Portfolio",
-      "description": "A modern portfolio website showcasing my skills, projects, and contact information. Built with React and Tailwind CSS.",
+      "description": "A modern portfolio website showcasing my skills, projects, and contact information.",
       "image": "https://i.ibb.co.com/M8KgY7Y/screencapture-localhost-5173-2025-01-26-08-56-41.jpg",
       "technologies": ["React", "Tailwind CSS", "JavaScript"],
       "liveLink": "https://royakash.netlify.app/",
       "githubLink": "https://github.com/yourusername/portfolio-project",
       "category": "WordPress",
+      "techStack":["React","Next js","typeScript"],
       "featured": true
     },
     {
@@ -19,6 +20,7 @@
       "liveLink": "https://ecommerce-site.example.com",
       "githubLink": "https://github.com/yourusername/ecommerce-website",
       "category": "Full Stack",
+      "techStack":["React","Next js","typeScript"],
       "featured": true
     },
     {
@@ -30,6 +32,7 @@
       "liveLink": "https://blogsite.example.com",
       "githubLink": "https://github.com/yourusername/blog-website",
       "category": "React",
+      "techStack":["React","Next js","typeScript"],
       "featured": true
     },
     {
@@ -41,6 +44,7 @@
       "liveLink": "https://todo-app.example.com",
       "githubLink": "https://github.com/yourusername/todo-app",
       "category": "WordPress",
+      "techStack":["React","Next js","typeScript"],
       "featured": false
     },
     {
@@ -52,6 +56,7 @@
       "liveLink": "https://weather-app.example.com",
       "githubLink": "https://github.com/yourusername/weather-app",
       "category": "React",
+      "techStack":["React","Next js","typeScript"],
       "featured": false
     }
   ]
