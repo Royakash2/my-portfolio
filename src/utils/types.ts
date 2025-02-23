@@ -10,3 +10,9 @@ export interface Project {
   techStack:string[]
   featured: boolean;
 }
+ 
+export interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}

@@ -16,7 +16,8 @@ const MainLayout = () => {
     AOS.init({
       duration: 900,
       once: true,
-      initClassName: "aos-init", // Required for proper initialization
+      initClassName: "aos-init",
+       // Required for proper initialization
     });
   }, []);
 
