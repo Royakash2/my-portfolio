@@ -16,7 +16,7 @@ const AboutMeCard = () => {
       <h1 className="text-3xl dancing font-bold mt-4">Akash Roy</h1>
       <p className="text-sm text-gray-500 font-bold">MERN Stack Developer</p>
       <div className="flex justify-center items-center gap-4 px-4">
-        {/* GitHub */}
+        {/* Social icons */}
         {SOCIAL_ICONS.map((social, index) => (
           <SocialIcon
             key={index}
@@ -27,7 +27,7 @@ const AboutMeCard = () => {
         ))}
       </div>
       <NavLink to="/contact">
-        {" "}
+        {/* contact button */}
         <button className="mt-6 btn btn-outline btn-wide md:w-52 bg-black hover:bg-white hover:text-[#323232] text-white rounded-2xl">
           Contact me
         </button>
