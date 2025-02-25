@@ -1,7 +1,9 @@
-import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
-import { FaXTwitter } from "react-icons/fa6";
+import { BsWhatsapp } from "react-icons/bs";
+
 import { FiMapPin, FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
+import SocialIcon from "../social-icon/SocialIcon";
+import { SOCIAL_ICONS } from "../../utils/socialIcons";
 
 const ContactInfo = () => {
   const CONTACT_INFO = [
@@ -21,34 +23,34 @@ const ContactInfo = () => {
       subtitle: "Call me at",
     },
     {
-      icon: <BsWhatsapp className="w-6 h-6" />,
+      icon: <BsWhatsapp className="w-6 h-6 " />,
       title: "+123 456 7890",
       subtitle: "WhatsApp",
     },
   ];
 
-  const SOCIAL_ICONS = [
-    {
-      icon: <BsWhatsapp className="w-5 h-5" />,
-      link: "https://wa.me/1234567890",
-      color: "text-green-400",
-    },
-    {
-      icon: <BsLinkedin className="w-5 h-5" />,
-      link: "https://linkedin.com/in/yourprofile",
-      color: "text-blue-400",
-    },
-    {
-      icon: <FaXTwitter className="w-5 h-5" />,
-      link: "https://twitter.com/yourprofile",
-      color: "text-blue-300",
-    },
-    {
-      icon: <BsGithub className="w-5 h-5" />,
-      link: "https://github.com/yourprofile",
-      color: "text-gray-400",
-    },
-  ];
+  // const SOCIAL_ICONS = [
+  //   {
+  //     icon: <BsWhatsapp className="w-5 h-5" />,
+  //     link: "https://wa.me/1234567890",
+  //     color: "text-green-400",
+  //   },
+  //   {
+  //     icon: <BsLinkedin className="w-5 h-5" />,
+  //     link: "https://linkedin.com/in/yourprofile",
+  //     color: "text-blue-400",
+  //   },
+  //   {
+  //     icon: <FaXTwitter className="w-5 h-5" />,
+  //     link: "https://twitter.com/yourprofile",
+  //     color: "text-blue-300",
+  //   },
+  //   {
+  //     icon: <BsGithub className="w-5 h-5" />,
+  //     link: "https://github.com/yourprofile",
+  //     color: "text-gray-400",
+  //   },
+  // ];
   return (
     <div className="w-full">
       <div className="p-6 sm:p-8">
@@ -66,7 +68,7 @@ const ContactInfo = () => {
               key={index}
               className="flex items-center gap-4 p-4 bg-gray-900 rounded-lg hover:bg-gray-800 transition border border-gray-700 hover:border-blue-500"
             >
-              <div className="p-3 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full text-white shadow-lg flex-shrink-0">
+              <div className="p-3 bg-black text-white hover:text-black border border-white rounded-full hover:bg-gray-400 transition">
                 {item.icon}
               </div>
               <div className="flex-1">
@@ -82,15 +84,12 @@ const ContactInfo = () => {
         {/* Social Media */}
         <div className="mt-6 flex justify-center gap-4">
           {SOCIAL_ICONS.map((social, index) => (
-            <a
+            <SocialIcon
               key={index}
-              href={social.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`p-3 bg-gray-800 rounded-full border border-gray-700 hover:border-blue-500 hover:shadow-md transition ${social.color}`}
-            >
-              {social.icon}
-            </a>
+              icon={social.icon}
+              link={social.link}
+              color={social.color}
+            />
           ))}
         </div>
       </div>
